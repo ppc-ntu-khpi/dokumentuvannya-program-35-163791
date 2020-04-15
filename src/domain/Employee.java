@@ -1,5 +1,19 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package domain;
+
+/**
+ *
+ * @author Admin
+ */
 public class Employee {
+    /**
+     * Get info about Employee
+     * @return info about Employee 
+     */
 
     @Override
     public String toString() {
@@ -13,6 +27,13 @@ public class Employee {
     private String dept;
 
    // private static int employeesCount = 0;
+    /**
+     * Initialize Employee
+     * @param name Name of employee
+     * @param jobTitle Job of employee
+     * @param level Level of employee
+     * @param dept Dept of employee
+     */
 
     public Employee(String name, String jobTitle, int level, String dept) {
         this();
@@ -29,6 +50,9 @@ public class Employee {
         }
         this.dept = dept;
     }
+    /**
+     * Assign ID to Employee
+     */
 
     public Employee() {
         ID = (int)(Math.random()*1000);
@@ -36,6 +60,10 @@ public class Employee {
 //            throw new NumberFormatException("ERROR! Employee's ID cannot be greater than 10000. Employee is not created!");
 //        }
     }
+    /**
+     * Assing job to Employee
+     * @param job job of Employee
+     */
 
     public void setJobTitle(String job) {
         jobTitle = job;
