@@ -31,7 +31,7 @@ public class Artist extends Employee {
         this.skiils = skiils;
     }
     /**
-     * Assign ID to Artist
+     * Creates a new instance of the Artist class.
      */
     public Artist() {
         super();
@@ -39,7 +39,7 @@ public class Artist extends Employee {
     }
     /**
      * Get skills of Artist
-     * @return
+     * @return string with information about artist
      */
     @Override
     public String toString() {
@@ -49,7 +49,7 @@ public class Artist extends Employee {
     private String[] skiils;
     /**
      * Get skills of Artist
-     * @return
+     * @return string with all skills
      */
     public String getSkills() {
         String s = "";
@@ -59,10 +59,19 @@ public class Artist extends Employee {
        s=s.substring(0, s.length() - 2);
         return s;
     }
+     /**
+     * Sets skills of the artist 
+     * @param skills Skills of the Artist
+     */
 
     public void setSkills(String[] skills) {
         this.skiils=skills;
     }
+    
+    /**
+     * Get skills of artist as array of strings
+     * @return array of artist skills
+     */
 
     public String[] getSkillsLSist() {
         return skiils;

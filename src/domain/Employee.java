@@ -72,6 +72,11 @@ public class Employee {
     public String getJobTitle() {
         return jobTitle;
     }
+    
+    /**
+     * Get the name of employee
+     * @return string of emloyee name
+     */
 
     public String getName() {
         return name;
@@ -92,10 +97,18 @@ public class Employee {
     public int getLevel() {
         return level;
     }
+    /**
+     * Get department of employee
+     * @return name of department where employee works
+     */
 
     public String getDept() {
         return dept;
     }
+      /**
+     * Set name of department where employee works
+     * @param dept Department name
+     */
 
     public void setDept(String dept) {
         this.dept = dept;
