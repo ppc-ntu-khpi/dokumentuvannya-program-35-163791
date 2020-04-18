@@ -61,18 +61,10 @@ public class Manager extends Employee {
         s=s.substring(0, s.length() - 2);
         return s;
     }
-    /**
-     * Assign employees to this manager
-     * @param employees List of assigned employees 
-     */
 
     public void setEmployees(Employee[] employees) {
         this.employees=employees;
     }
-     /**
-     * Get list of employees assigned to this manager
-     * @return list of assigned employees
-     */
 
     public Employee[] getEmployeesList() {
         return employees;

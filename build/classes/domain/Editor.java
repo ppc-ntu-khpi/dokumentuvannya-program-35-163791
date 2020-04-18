@@ -44,7 +44,7 @@ public class Editor extends Artist {
         this.electronicEditing = electronicEditing;
     }
     /**
-     * Creates a new instance of the Editor class that works with electronic devices.
+     * Assign ID and electronic editing
      */
     
     public Editor() {
@@ -53,7 +53,6 @@ public class Editor extends Artist {
     }
     /**
      *Create string "s"
-     * @return string with information about editor
      */
 
     @Override
@@ -72,10 +71,6 @@ public class Editor extends Artist {
     public boolean getPreferences() {
         return electronicEditing;
     }
-    /**
-     * Set information about editing device of editor.
-     * @param electronic If device is electronic
-     */
 
     public void setPreferences(boolean electronic) {
         this.electronicEditing=electronic;
